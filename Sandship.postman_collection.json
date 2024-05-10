@@ -1,0 +1,466 @@
+{
+	"info": {
+		"_postman_id": "c5a8f77f-15b1-47f7-ad10-a021804b0632",
+		"name": "Sandship",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17822188"
+	},
+	"item": [
+		{
+			"name": "Player",
+			"item": [
+				{
+					"name": "Create player",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nickname\" : \"Gelbert1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_local}}/api/players/create",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"api",
+								"players",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get player",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nickname\" : \"Gelbert\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_local}}/api/players/get",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"api",
+								"players",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get players",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url_local}}/api/players",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"api",
+								"players"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete player",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nickname\" : \"Gelbert\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_local}}/api/players/delete",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"api",
+								"players",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Warehouse",
+			"item": [
+				{
+					"name": "Create warehouse",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nickname\" : \"Gelbert1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_local}}/api/warehouses/create",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"api",
+								"warehouses",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get warehouse",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nickname\" : \"Gelbert\",\r\n    \"warehouseId\" : 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_local}}/api/warehouses/get",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"api",
+								"warehouses",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete warehouse",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nickname\" : \"Gelbert\",\r\n    \"warehouseId\" : 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_local}}/api/warehouses/delete",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"api",
+								"warehouses",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Material types",
+			"item": [
+				{
+					"name": "Create material-types",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"gold\",\r\n    \"icon\" : \"asdfadfg\",\r\n    \"description\" : \"askjdas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_local}}/api/material-types/create",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"api",
+								"material-types",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get material-types",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Gold\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_local}}/api/material-types/get",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"api",
+								"material-types",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add material-types",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nickname\" : \"Gelbert1\",\r\n    \"materialTypeName\" : \"silver\",\r\n    \"warehouseId\" : 4,\r\n    \"count\" : 500\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_local}}/api/material-types/add",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"api",
+								"material-types",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upgrade capacity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nickname\" : \"Gelbert\",\r\n    \"materialTypeName\" : \"Silver\",\r\n    \"warehouseId\" : 1,\r\n    \"capacity\" : 1000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_local}}/api/material-types/upgrade-capacity",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"api",
+								"material-types",
+								"upgrade-capacity"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Move material-types",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nickname\" : \"Gelbert\",\r\n    \"materialTypeName\" : \"silver\",\r\n    \"warehouseId\" : 1,\r\n    \"fromWarehouseId\" : 2,\r\n    \"count\" : 500\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_local}}/api/material-types/move",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"api",
+								"material-types",
+								"move"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete material-types",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Gold\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_local}}/api/material-types/delete",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"api",
+								"material-types",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
